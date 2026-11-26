@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Torty artystyczne na zamówienie Bieruń - Ale mi słodko, Monika Duława</title>
+<meta name="description" content="Torty weselne i okolicznościowe, słodkie stoły i słodkie boxy z Bierunia. Ręcznie robione dekoracje, świeże jaja, masło i najlepsza czekolada.">
+<link rel="icon" href="favicon.png">
+<link rel="preload" href="fonts/fraunces-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hm-720.webp" imagesrcset="img/hm-480.webp 480w, img/hm-720.webp 720w, img/hm-1000.webp 1000w" imagesizes="100vw" media="(max-width:799px)">
+<link rel="preload" as="image" href="img/h2-960.webp" imagesrcset="img/h2-640.webp 640w, img/h2-960.webp 960w, img/h2-1280.webp 1280w, img/h2-1700.webp 1700w" imagesizes="34vw" media="(min-width:800px)">
+<style>
+@font-face{font-family:"Fraunces";font-weight:300 800;font-display:swap;src:url(fonts/fraunces-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Fraunces";font-weight:300 800;font-display:swap;src:url(fonts/fraunces-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/figtree-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/figtree-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{
+  --roz:#B23F63;      /* malina z róż w logo, przyciski i akcenty */
+  --roz-c:#93304F;    /* hover */
+  --smuga:#F2CCD2;    /* smuga pędzla spod nazwy w logo (tylko akcent) */
+  --zloto:#B98A7C;    /* różowe złoto miksera */
+  --grafit:#3A3236;   /* szarość napisu z logo, tekst i ciemna sekcja */
+  --tekst:#3A3236;
+  --szary:#F3F3F5;
+  --linia:#E3E1E4;
+  --szer:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.65 "Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.2vw,50px)}
+h3{font-size:24px}
+p{margin:0 0 1em}
+.wrap{max-width:var(--szer);margin:0 auto;padding:0 22px}
+.sek{padding:clamp(64px,9vw,120px) 0}
+.szara{background:var(--szary)}
+
+/* smuga pędzla - motyw z logo */
+.smuga{display:block;width:150px;height:22px;color:var(--roz);margin:16px 0 26px}
+.smuga.c{margin-left:auto;margin-right:auto}
+.serce{width:16px;height:16px;flex:none;color:var(--roz);margin-top:5px}
+
+/* przycisk z poszarpaną krawędzią jak ślad szpachelki */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--roz);color:#fff;text-decoration:none;font-weight:600;font-size:17px;padding:15px 30px 16px;border:0;cursor:pointer;font-family:inherit;
+  clip-path:polygon(1% 8%,18% 2%,46% 6%,72% 0,99% 5%,100% 52%,98% 95%,74% 100%,44% 94%,16% 99%,0 93%,2% 50%);transition:background .2s}
+.btn:hover{background:var(--roz-c)}
+.btn-jasny{background:#fff;color:var(--grafit)}
+.btn-jasny:hover{background:var(--smuga)}
+
+/* nagłówek */
+.top{position:absolute;inset:0 0 auto;z-index:20;padding:14px 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1440px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo img{width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.logo span{font-family:"Fraunces",serif;font-size:22px;font-weight:500;text-shadow:0 1px 10px rgba(0,0,0,.35)}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-weight:500;font-size:16px;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.menu a:hover{text-decoration:underline;text-underline-offset:6px}
+.menu .btn{text-shadow:none;padding:11px 22px 12px;font-size:16px}
+.burger{display:none;background:none;border:0;width:46px;height:46px;padding:10px;cursor:pointer;color:#fff}
+.burger span{display:block;height:2px;background:currentColor;margin:6px 0;box-shadow:0 1px 6px rgba(0,0,0,.4)}
+
+/* pierwszy ekran: trzy zdjęcia od krawędzi do krawędzi */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#2b2426}
+.hero-foto{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;background:#fff}
+.hero-foto picture,.hero-foto img{width:100%;height:100%}
+.hero-foto img{object-fit:cover}
+.hero-foto .m{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,24,27,.62) 0,rgba(32,24,27,.42) 34%,rgba(32,24,27,0) 58%),linear-gradient(180deg,rgba(32,24,27,.45) 0,rgba(32,24,27,0) 20%,rgba(32,24,27,0) 45%,rgba(32,24,27,.6) 85%,rgba(32,24,27,.75) 100%)}
+.hero-txt{position:relative;z-index:2;padding:120px 0 clamp(40px,7vh,80px)}
+.hero-txt .wrap{max-width:1440px}
+.hero h1{font-size:clamp(34px,4.6vw,66px);max-width:15ch;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+.hero .smuga{color:var(--smuga);width:190px;height:26px;margin:18px 0 18px}
+.hero p{font-size:clamp(17px,1.4vw,20px);max-width:44ch;margin:0 0 28px;color:#F6EEF0}
+.hero-akcje{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}
+.hero-akcje .mail{color:#fff;font-weight:500}
+
+/* o mnie */
+.omnie{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.omnie figure{margin:0;position:relative}
+.omnie figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.omnie .serca{position:absolute;width:42%;right:-6%;bottom:-8%;border:8px solid #fff;aspect-ratio:1;object-fit:cover}
+.lead{font-size:clamp(19px,1.6vw,22px);line-height:1.55}
+.skladniki{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.skladniki li{display:flex;gap:10px;align-items:flex-start}
+
+/* oferta */
+.naglowek{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.naglowek p{max-width:46ch;margin:0}
+.oferta{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.karta{text-decoration:none;color:inherit;display:block}
+.karta img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.karta .ram{overflow:hidden}
+.karta:hover img{transform:scale(1.04)}
+.karta h3{margin:18px 0 6px}
+.karta p{margin:0;color:#5c5357;font-size:16px}
+
+/* torty okolicznościowe */
+.szczegoly{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+.porcje{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--linia);border-bottom:1px solid var(--linia);margin:28px 0}
+.porcje div{padding:20px 6px;text-align:center;border-left:1px solid var(--linia)}
+.porcje div:first-child{border-left:0}
+.porcje b{display:block;font-family:"Fraunces",serif;font-weight:500;font-size:30px;line-height:1.1}
+.porcje span{font-size:14px;color:#6b6266}
+.lista{list-style:none;padding:0;margin:0}
+.lista li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--linia)}
+.lista li:last-child{border-bottom:0}
+.uwaga{font-size:16px;color:#5c5357;margin-top:22px}
+.dekor h3{margin-bottom:8px}
+
+/* słodki stół */
+.stol{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.stol img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.slodkosci{columns:2;column-gap:28px;list-style:none;padding:0;margin:22px 0}
+.slodkosci li{display:flex;gap:10px;break-inside:avoid;padding:5px 0}
+
+/* galeria */
+.galeria-pas{position:relative}
+.galeria{--lp:max(22px,calc((100vw - var(--szer))/2 + 22px));display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 8px var(--lp);scroll-padding-left:var(--lp);scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.galeria::-webkit-scrollbar{display:none}
+.galeria.ciag{cursor:grabbing;scroll-snap-type:none}
+.galeria figure{flex:0 0 clamp(240px,24vw,330px);margin:0;scroll-snap-align:start}
+.galeria img{width:100%;aspect-ratio:4/5;object-fit:cover;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:50px;height:50px;border:1px solid var(--grafit);background:#fff;color:var(--grafit);cursor:pointer;font-size:22px;line-height:1;display:grid;place-items:center}
+.strzalki button:hover{background:var(--grafit);color:#fff}
+
+/* zamówienie - ciemna sekcja */
+.ciemna{background:var(--grafit);color:#F1ECEE}
+.ciemna .smuga{color:var(--smuga)}
+.zam{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,6vw,90px);align-items:start}
+.zam .lista li{border-color:rgba(255,255,255,.14)}
+.zam .serce{color:var(--smuga)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:#E6DEE1}
+input,select,textarea{width:100%;font:inherit;font-size:16px;color:var(--grafit);background:#fff;border:0;padding:13px 14px;border-radius:0}
+textarea{min-height:110px;resize:vertical}
+.pelna{grid-column:1/-1}
+.zgoda{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#D9D0D4}
+.zgoda input{width:18px;height:18px;margin-top:3px;flex:none}
+.info-form{font-size:14px;color:#D9D0D4;min-height:1.4em;margin:0}
+
+/* stopka */
+.stopka{background:var(--szary);padding:56px 0 30px;font-size:15px}
+.stopka .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.stopka h4{font-family:"Fraunces",serif;font-weight:500;font-size:19px;margin:0 0 10px}
+.stopka ul{list-style:none;padding:0;margin:0}
+.stopka li{margin:4px 0}
+.stopka a{text-decoration:none}
+.stopka a:hover{text-decoration:underline}
+.stopka .logo-s{width:84px;height:84px;margin-bottom:12px;border-radius:50%}
+.dol{max-width:var(--szer);margin:34px auto 0;padding:20px 22px 0;border-top:1px solid var(--linia);display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;color:#5c5357}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* menu mobilne */
+.panel{position:fixed;inset:0;z-index:50;background:#fff;color:var(--grafit);display:flex;flex-direction:column;padding:22px;transform:translateX(100%);transition:transform .3s;visibility:hidden}
+.panel.otwarte{transform:none;visibility:visible}
+.panel .zamknij{align-self:flex-end;background:none;border:0;font-size:34px;line-height:1;cursor:pointer;color:var(--grafit);width:46px;height:46px}
+.panel nav{display:flex;flex-direction:column;margin-top:10px}
+.panel nav a{font-family:"Fraunces",serif;font-size:28px;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--linia)}
+.panel .btn{margin-top:28px;align-self:flex-start}
+
+@media (max-width:1080px){
+  .menu a:not(.btn){display:none}
+  .oferta{grid-template-columns:1fr 1fr}
+  .stopka .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:799px){
+  body{font-size:16px}
+  .menu{display:none}
+  .burger{display:block}
+  .logo img{width:46px;height:46px}
+  .logo span{font-size:19px}
+  .top{padding:10px 0}
+  .hero-foto{grid-template-columns:1fr;gap:0}
+  .hero-foto .d{display:none}
+  .hero-foto .m{display:block}
+  .hero::after{background:linear-gradient(180deg,rgba(32,24,27,.5) 0,rgba(32,24,27,0) 18%,rgba(32,24,27,0) 34%,rgba(32,24,27,.8) 66%,rgba(32,24,27,.9) 100%)}
+  .hero-txt{padding:96px 0 28px}
+  .hero h1{font-size:clamp(30px,8.4vw,38px)}
+  .hero .smuga{width:150px;height:20px;margin:12px 0 12px}
+  .hero p{margin-bottom:24px}
+  .omnie,.szczegoly,.stol,.zam{grid-template-columns:1fr}
+  .omnie figure{margin-right:8%}
+  .stol figure{order:-1}
+  .oferta{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:76%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px 6px;scroll-padding-left:22px;scrollbar-width:none}
+  .oferta::-webkit-scrollbar{display:none}
+  .karta{scroll-snap-align:start}
+  .porcje b{font-size:24px}
+  .porcje span{font-size:12px}
+  .slodkosci{columns:1}
+  .skladniki{grid-template-columns:1fr}
+  form{grid-template-columns:1fr}
+  .galeria figure{flex-basis:72%}
+  .strzalki{display:none}
+}
+@media (max-width:799px) and (max-height:700px){
+  .hero-txt{padding-bottom:22px}
+  .hero h1{font-size:29px}
+  .hero p{font-size:15.5px;margin-bottom:24px;line-height:1.5}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="smuga" viewBox="0 0 300 30"><path fill="currentColor" d="M6 14C34 7 70 5 112 7c40 2 78 0 118-2 26-1 48 0 64 3l3 6-2 7c-20 3-46 2-74 4-40 3-80 5-122 4-34 0-66 2-96 3l-6-5 1-8z"/><path fill="#fff" opacity=".35" d="M40 15c30-2 64-3 98-2l-2 2c-34 0-66 1-96 2zM170 19c26-1 52-2 80-1l-1 2c-28 0-54 0-79 1z"/></symbol>
+  <symbol id="serce" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 20.5C6 16 3 12.4 3.6 9.1 4.2 6 7.6 5 10 6.8c.9.7 1.6 1.6 2 2.6.4-1 1.1-1.9 2-2.6 2.4-1.8 5.8-.8 6.4 2.3.6 3.3-2.4 6.9-8.4 11.4z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="img/logo-240.webp" width="56" height="56" alt="Logo Ale mi słodko"><span>Ale mi słodko</span></a>
+    <nav class="menu" aria-label="Menu">
+      <a href="#oferta">Torty weselne</a>
+      <a href="#okolicznosciowe">Torty okolicznościowe</a>
+      <a href="#stol">Słodki stół i boxy</a>
+      <a href="#galeria">Galeria</a>
+      <a class="btn" href="#zamowienie">Zapytaj o termin</a>
+    </nav>
+    <button class="burger" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="panel" id="panel" aria-hidden="true">
+  <button class="zamknij" aria-label="Zamknij menu">&times;</button>
+  <nav>
+    <a href="#omnie">O mnie</a>
+    <a href="#oferta">Torty weselne</a>
+    <a href="#okolicznosciowe">Torty okolicznościowe</a>
+    <a href="#stol">Słodki stół i boxy</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn" href="#zamowienie">Zapytaj o termin</a>
+</div>
+
+<main>
+<section class="hero">
+  <div class="hero-foto">
+    <picture class="d"><img src="img/h1-960.webp" srcset="img/h1-640.webp 640w, img/h1-960.webp 960w, img/h1-1280.webp 1280w, img/h1-1700.webp 1700w" sizes="34vw" width="1280" height="1939" alt="Dwupiętrowy tort z różowymi różami na paterze" decoding="async"></picture>
+    <picture class="d"><img src="img/h2-960.webp" srcset="img/h2-640.webp 640w, img/h2-960.webp 960w, img/h2-1280.webp 1280w, img/h2-1700.webp 1700w" sizes="34vw" width="1280" height="1939" alt="Trzypiętrowy tort weselny z kaskadą róż" fetchpriority="high"></picture>
+    <picture class="d"><img src="img/h3-960.webp" srcset="img/h3-640.webp 640w, img/h3-960.webp 960w, img/h3-1280.webp 1280w, img/h3-1700.webp 1700w" sizes="34vw" width="1280" height="1939" alt="Bezy z kremem i malinami" decoding="async"></picture>
+    <picture class="m"><img src="img/hm-720.webp" srcset="img/hm-480.webp 480w, img/hm-720.webp 720w, img/hm-1000.webp 1000w, img/hm-1400.webp 1400w" sizes="100vw" width="1000" height="2000" alt="Trzypiętrowy tort weselny z kaskadą róż" fetchpriority="high"></picture>
+  </div>
+  <div class="hero-txt">
+    <div class="wrap">
+      <h1>Torty artystyczne z&nbsp;Bierunia, które smakują tak, jak wyglądają</h1>
+      <svg class="smuga" aria-hidden="true"><use href="#smuga"/></svg>
+      <p>Mam na imię Monika. Tort na wesele, komunię czy urodziny robię od podstaw: ze świeżych jaj, masła, mąki i najlepszej czekolady.</p>
+      <div class="hero-akcje">
+        <a class="btn" href="#zamowienie">Zapytaj o wolny termin</a>
+        <a class="mail" href="mailto:alemislodko@gmail.com">alemislodko@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="omnie">
+  <div class="wrap omnie">
+    <figure>
+      <img src="img/omnie-1000.webp" srcset="img/omnie-600.webp 600w, img/omnie-1000.webp 1000w, img/omnie-1400.webp 1400w" sizes="(max-width:799px) 90vw, 46vw" width="1000" height="1250" alt="Dwupiętrowy tort z żywymi kwiatami" loading="lazy">
+      <img class="serca" src="img/serca-500.webp" srcset="img/serca-500.webp 500w, img/serca-900.webp 900w" sizes="(max-width:799px) 38vw, 20vw" width="500" height="500" alt="Cakepopsy w kształcie serc" loading="lazy">
+    </figure>
+    <div>
+      <h2>Wygląd ma znaczenie. Smak jeszcze większe.</h2>
+      <svg class="smuga" aria-hidden="true"><use href="#smuga"/></svg>
+      <p class="lead">Każdy tort projektuję pod konkretną uroczystość: kolory przyjęcia, motyw, liczbę gości. Dekoracje robię ręcznie, od figurek z masy cukrowej po malowanie i kwiaty.</p>
+      <p>Aby Wasze wesele, komunia czy urodziny były najwspanialsze, przygotuję wyjątkowy tort, słodki stół i pyszne ciasta. Wszystko z dobrych, prostych składników:</p>
+      <ul class="skladniki">
+        <li><svg class="serce"><use href="#serce"/></svg>świeże jaja</li>
+        <li><svg class="serce"><use href="#serce"/></svg>prawdziwe masło</li>
+        <li><svg class="serce"><use href="#serce"/></svg>dobra mąka</li>
+        <li><svg class="serce"><use href="#serce"/></svg>najlepsza czekolada</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek szara" id="oferta">
+  <div class="wrap">
+    <div class="naglowek">
+      <div>
+        <h2>Co mogę dla Was przygotować</h2>
+        <svg class="smuga" aria-hidden="true" style="margin-bottom:0"><use href="#smuga"/></svg>
+      </div>
+      <p>Od kameralnych urodzin po wesele na kilkaset osób. Kolorystykę i dekoracje dobieramy razem.</p>
+    </div>
+    <div class="oferta">
+      <a class="karta" href="#zamowienie">
+        <div class="ram"><img src="img/o-wesele-480.webp" srcset="img/o-wesele-480.webp 480w, img/o-wesele-800.webp 800w" sizes="(max-width:799px) 76vw, (max-width:1080px) 46vw, 280px" width="480" height="600" alt="Piętrowy tort weselny z bordowymi kwiatami" loading="lazy"></div>
+        <h3>Torty weselne</h3>
+        <p>Piętrowe, z żywymi kwiatami albo ręcznie robionymi dekoracjami. Pod wystrój sali i kolory wesela.</p>
+      </a>
+      <a class="karta" href="#okolicznosciowe">
+        <div class="ram"><img src="img/o-okol-480.webp" srcset="img/o-okol-480.webp 480w, img/o-okol-800.webp 800w" sizes="(max-width:799px) 76vw, (max-width:1080px) 46vw, 280px" width="480" height="600" alt="Tort na roczek z figurkami lwa i żyrafy" loading="lazy"></div>
+        <h3>Torty okolicznościowe</h3>
+        <p>Urodziny, chrzciny, roczki, rocznice. Od 10 porcji, od 25 porcji tort piętrowy.</p>
+      </a>
+      <a class="karta" href="#stol">
+        <div class="ram"><img src="img/o-stol-480.webp" srcset="img/o-stol-480.webp 480w, img/o-stol-800.webp 800w" sizes="(max-width:799px) 76vw, (max-width:1080px) 46vw, 280px" width="480" height="600" alt="Słodki stół na komunię z bezami i babeczkami" loading="lazy"></div>
+        <h3>Słodki stół</h3>
+        <p>Babeczki, makaroniki, mini tarty i cakepopsy ułożone w jednej kolorystyce z przyjęciem.</p>
+      </a>
+      <a class="karta" href="#stol">
+        <div class="ram"><img src="img/o-boxy-480.webp" srcset="img/o-boxy-480.webp 480w, img/o-boxy-800.webp 800w" sizes="(max-width:799px) 76vw, (max-width:1080px) 46vw, 280px" width="480" height="600" alt="Słodki box z donutami, makaronikami i kwiatami" loading="lazy"></div>
+        <h3>Słodkie boxy</h3>
+        <p>Pudełko słodkości złożone z Waszych ulubionych smaków. Gotowy prezent na urodziny.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="okolicznosciowe">
+  <div class="wrap szczegoly">
+    <div>
+      <h2>Torty okolicznościowe</h2>
+      <svg class="smuga" aria-hidden="true"><use href="#smuga"/></svg>
+      <p class="lead">Urodziny, chrzciny, roczki, rocznica ślubu. Każdy taki dzień jest ważny i można go osłodzić pięknym tortem.</p>
+      <div class="porcje" aria-label="Wielkości tortów jednopiętrowych">
+        <div><b>10</b><span>porcji</span></div>
+        <div><b>11-15</b><span>porcji</span></div>
+        <div><b>16-20</b><span>porcji</span></div>
+        <div><b>21-25</b><span>porcji</span></div>
+      </div>
+      <p>Od 25 porcji robimy już tort piętrowy. Torty obkładam masą czekoladową albo maślaną.</p>
+      <p class="uwaga">Cena zależy od liczby porcji oraz rodzaju i ilości dekoracji. Napiszcie, na ile osób i na jaką okazję, a odpowiem z wyceną.</p>
+    </div>
+    <div class="dekor">
+      <img src="img/figurka-600.webp" srcset="img/figurka-600.webp 600w, img/figurka-1000.webp 1000w" sizes="(max-width:799px) 92vw, 44vw" width="600" height="480" alt="Tort na roczek z ręcznie robioną figurką lwa" loading="lazy" style="width:100%;aspect-ratio:5/4;object-fit:cover;margin-bottom:28px">
+      <h3>Dekoracje do wyboru</h3>
+      <ul class="lista">
+        <li><svg class="serce"><use href="#serce"/></svg><span>Ręcznie wykonana figurka, np. ulubiona postać z bajki</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>Malowanie na masie cukrowej</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>Dekoracje kwiatowe</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>Wydruk na masie cukrowej</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sek szara" id="stol">
+  <div class="wrap stol">
+    <div>
+      <h2>Słodki stół i słodkie boxy</h2>
+      <svg class="smuga" aria-hidden="true"><use href="#smuga"/></svg>
+      <p class="lead">Przy małych uroczystościach liczę 2 sztuki słodkości na osobę, przy większych, np. na weselu, 3 lub 4.</p>
+      <p>Te same słodkości zamknę też w pudełku jako prezent. Do wyboru:</p>
+      <ul class="slodkosci">
+        <li><svg class="serce"><use href="#serce"/></svg>Babeczki</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Cakepopsy (ciastko na patyku)</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Cakeslices (ciastko jak lód)</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Donuty w polewie czekoladowej</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Deserki w kubeczku</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Mini serniczki</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Mini tarty</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Makaroniki</li>
+        <li><svg class="serce"><use href="#serce"/></svg>Lizaki bezowe</li>
+      </ul>
+      <a class="btn" href="#zamowienie">Zapytaj o słodki stół</a>
+    </div>
+    <figure style="margin:0">
+      <img src="img/stol-700.webp" srcset="img/stol-700.webp 700w, img/stol-1200.webp 1200w" sizes="(max-width:799px) 92vw, 46vw" width="700" height="560" alt="Słodki stół w bieli i błękicie z babeczkami i cakepopsami" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="sek" id="galeria">
+  <div class="wrap naglowek">
+    <div>
+      <h2>Z mojej pracowni</h2>
+      <svg class="smuga" aria-hidden="true" style="margin-bottom:0"><use href="#smuga"/></svg>
+    </div>
+    <div class="strzalki"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcia">&#8592;</button><button type="button" data-k="1" aria-label="Następne zdjęcia">&#8594;</button></div>
+  </div>
+  <div class="galeria-pas">
+    <div class="galeria" tabindex="0" aria-label="Galeria tortów, przesuń w bok">
+      <figure><img src="img/g01-480.webp" srcset="img/g01-480.webp 480w, img/g01-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort z kwiatami z masy cukrowej i króliczkiem" loading="lazy"></figure>
+      <figure><img src="img/g02-480.webp" srcset="img/g02-480.webp 480w, img/g02-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort z piwoniami i napisem love" loading="lazy"></figure>
+      <figure><img src="img/g03-480.webp" srcset="img/g03-480.webp 480w, img/g03-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort kotek z kwiatami" loading="lazy"></figure>
+      <figure><img src="img/g04-480.webp" srcset="img/g04-480.webp 480w, img/g04-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Mini tarty z owocami i makaroniki w pudełku" loading="lazy"></figure>
+      <figure><img src="img/g05-480.webp" srcset="img/g05-480.webp 480w, img/g05-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort weselny z fioletowymi kwiatami" loading="lazy"></figure>
+      <figure><img src="img/g06-480.webp" srcset="img/g06-480.webp 480w, img/g06-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort z piwoniami i malowaną masą" loading="lazy"></figure>
+      <figure><img src="img/g07-480.webp" srcset="img/g07-480.webp 480w, img/g07-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Cakeslices w fioletowej polewie" loading="lazy"></figure>
+      <figure><img src="img/g08-480.webp" srcset="img/g08-480.webp 480w, img/g08-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Różowy tort urodzinowy z figurką pieska" loading="lazy"></figure>
+      <figure><img src="img/g09-480.webp" srcset="img/g09-480.webp 480w, img/g09-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Donut, bezy i cakepopsy w różu" loading="lazy"></figure>
+      <figure><img src="img/g10-480.webp" srcset="img/g10-480.webp 480w, img/g10-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Trzypiętrowy tort w zieleni z liśćmi" loading="lazy"></figure>
+      <figure><img src="img/g11-480.webp" srcset="img/g11-480.webp 480w, img/g11-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort torebka z różami i butelką prosecco" loading="lazy"></figure>
+      <figure><img src="img/g12-480.webp" srcset="img/g12-480.webp 480w, img/g12-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Babeczki z kremem, borówkami i preclem" loading="lazy"></figure>
+      <figure><img src="img/g13-480.webp" srcset="img/g13-480.webp 480w, img/g13-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort na chrzest z misiem" loading="lazy"></figure>
+      <figure><img src="img/g14-480.webp" srcset="img/g14-480.webp 480w, img/g14-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Mini tarty z czekoladą i ciasteczkami" loading="lazy"></figure>
+      <figure><img src="img/g15-480.webp" srcset="img/g15-480.webp 480w, img/g15-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort komunijny z kwiatami" loading="lazy"></figure>
+      <figure><img src="img/g16-480.webp" srcset="img/g16-480.webp 480w, img/g16-800.webp 800w" sizes="(max-width:799px) 72vw, 330px" width="480" height="600" alt="Tort z kotem z Cheshire w błękicie" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sek ciemna" id="zamowienie">
+  <div class="wrap zam">
+    <div>
+      <h2>Zamówienie tortu</h2>
+      <svg class="smuga" aria-hidden="true"><use href="#smuga"/></svg>
+      <p class="lead">Żeby przygotować wycenę, potrzebuję kilku informacji:</p>
+      <ul class="lista">
+        <li><svg class="serce"><use href="#serce"/></svg><span>data przyjęcia</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>lokalizacja przyjęcia (głównie przy tortach weselnych)</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>spodziewana liczba gości</span></li>
+        <li><svg class="serce"><use href="#serce"/></svg><span>motyw przyjęcia i dekoracja tortu. Jeśli jesteście niezdecydowani, pomogę wybrać.</span></li>
+      </ul>
+    </div>
+    <form id="formularz" novalidate>
+      <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" autocomplete="name"></div>
+      <div><label for="f-mail">Adres e-mail</label><input id="f-mail" type="email" autocomplete="email"></div>
+      <div><label for="f-rodzaj">Rodzaj uroczystości</label><select id="f-rodzaj"><option>Wesele</option><option>Urodziny</option><option>Chrzciny</option><option>Komunia</option><option>Roczek</option><option>Inna okazja</option></select></div>
+      <div><label for="f-data">Data przyjęcia</label><input id="f-data" type="date"></div>
+      <div><label for="f-miejsce">Lokalizacja przyjęcia</label><input id="f-miejsce"></div>
+      <div><label for="f-goscie">Liczba gości</label><input id="f-goscie" type="number" min="1" inputmode="numeric"></div>
+      <div class="pelna"><label for="f-stol">Słodki stół</label><select id="f-stol"><option>Nie</option><option>Tak</option></select></div>
+      <div class="pelna"><label for="f-tresc">Motyw przewodni i wiadomość</label><textarea id="f-tresc"></textarea></div>
+      <label class="zgoda pelna"><input type="checkbox"> Zapoznałem się i akceptuję politykę prywatności.</label>
+      <div class="pelna"><button class="btn btn-jasny" type="submit">Wyślij zapytanie</button></div>
+      <p class="info-form pelna" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka" id="kontakt">
+  <div class="wrap">
+    <div>
+      <img class="logo-s" src="img/logo-240.webp" width="84" height="84" alt="Ale mi słodko" loading="lazy">
+      <p style="margin:0">Torty artystyczne, słodkie stoły i słodkie boxy na zamówienie.</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <ul>
+        <li>Monika Duława</li>
+        <li>ul. Majowa 26, 43-155 Bieruń</li>
+        <li><a href="mailto:alemislodko@gmail.com">alemislodko@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Oferta</h4>
+      <ul>
+        <li><a href="#oferta">Torty weselne</a></li>
+        <li><a href="#okolicznosciowe">Torty okolicznościowe</a></li>
+        <li><a href="#stol">Słodki stół</a></li>
+        <li><a href="#stol">Słodkie boxy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Obserwuj</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/alemislodko" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/alemislodko/" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="dol">
+    <span>&copy; 2026 Ale mi słodko, Monika Duława. NIP 6462654934</span>
+    <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=alemislodko.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var p=document.getElementById('panel'),b=document.querySelector('.burger');
+  function ustaw(o){p.classList.toggle('otwarte',o);p.setAttribute('aria-hidden',!o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+  b.addEventListener('click',function(){ustaw(true)});
+  p.querySelector('.zamknij').addEventListener('click',function(){ustaw(false)});
+  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){ustaw(false)})});
+
+  var g=document.querySelector('.galeria'),start=0,pos=0,ciag=false,ruch=0;
+  g.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;ciag=true;ruch=0;start=e.clientX;pos=g.scrollLeft;g.classList.add('ciag');g.setPointerCapture(e.pointerId)});
+  g.addEventListener('pointermove',function(e){if(!ciag)return;ruch=e.clientX-start;g.scrollLeft=pos-ruch});
+  function koniec(){if(!ciag)return;ciag=false;g.classList.remove('ciag')}
+  g.addEventListener('pointerup',koniec);g.addEventListener('pointercancel',koniec);
+  document.querySelectorAll('.strzalki button').forEach(function(btn){btn.addEventListener('click',function(){var f=g.querySelector('figure');g.scrollBy({left:(f.offsetWidth+16)*2*btn.dataset.k,behavior:'smooth'})})});
+
+  document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();this.querySelector('.info-form').textContent='To podgląd strony, formularz będzie wysyłał zapytania na docelowej stronie.'});
+})();
+</script>
+</body>
+</html>
